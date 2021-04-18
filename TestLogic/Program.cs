@@ -5,6 +5,7 @@ using TestLogic.CanJump;
 using TestLogic.ContainerWithMostWater;
 using TestLogic.LongestCommonPrefix;
 using TestLogic.ReverseInteger;
+using TestLogic.SimplifyPath;
 using TestLogic.ThreeSum;
 using TestLogic.TwoSum;
 
@@ -14,9 +15,11 @@ namespace TestLogic
     {
         static void Main(string[] args)
         {
-			var canJumpInput = new int[] { 2, 3, 1, 1, 4 };
-			var canJumpResult = CanJumpClass.CanJump(canJumpInput);
-			Console.WriteLine(canJumpResult);
+			var pathExample = "//a//./b//..//..//c//";
+			Console.WriteLine(SimplifyPathClass.SimplifyPath("/../")); 
+			//var canJumpInput = new int[] { 2, 3, 1, 1, 4 };
+			//var canJumpResult = CanJumpClass.CanJump(canJumpInput);
+			//Console.WriteLine(canJumpResult);
 			//var nums = new int[] { 2, 7, 11, 15 };
 			//var target = 9;
 			//var result = TwoSumClass.TwoSumMethod(nums, target);
